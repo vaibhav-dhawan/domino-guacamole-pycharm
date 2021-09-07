@@ -5,7 +5,7 @@ def mappathf(path):
         f.write("------path--------\n")
         f.write(path)
         f.write("\n")
-    #if re.search(r'([^;]*)/([^;]*)/([^;]*)/([^;]*)/([^;]*)/texmaker/',path):
+    #if re.search(r'([^;]*)/([^;]*)/([^;]*)/([^;]*)/([^;]*)/pycharm/',path):
     if path=="/":
         p = '/?username=domino&password=domino'
     else:
@@ -15,14 +15,14 @@ def mappathf(path):
         f.write("\n------end--------\n")
     return p
     
-def setup_texmaker():
+def setup_pycharm():
   return {
-    'command': ['/var/opt/workspaces/texmaker/start.sh'],
+    'command': ['/opt/pycharm-community-2021.2.1/bin/pycharm.sh'],
     'port': 8080,
     'timeout': 300,
     'absolute_url': True,
     'mappath' : mappathf,
     'launcher_entry': {
-            'title': 'Texmaker: Login domino/domino'
+            'title': 'pycharm: Login domino/domino'
     }
   }

@@ -1,13 +1,13 @@
 import setuptools
 
 setuptools.setup(
-  name="jupyter-texmaker-server",
+  name="jupyter-pycharm-server",
   # py_modules rather than packages, since we only have 1 file
-  py_modules=['texmaker'],
+  py_modules=['pycharm'],
   entry_points={
       'jupyter_serverproxy_servers': [
           # name = packagename:function_name
-          'texmaker = texmaker:setup_texmaker',
+          'pycharm = pycharm:setup_pycharm',
       ]
   },
   packages=setuptools.find_packages(),
