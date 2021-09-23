@@ -1,0 +1,9 @@
+pycharm:
+  title: "PyCharm"
+  iconUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg"
+  start: [ "/var/opt/workspaces/pycharm/start.sh" ]
+  httpProxy:
+    port: 8080
+    internalPath: "/{{ownerUsername}}/{{projectName}}/{{sessionPathComponent}}/{{runId}}/#/?username=domino&password=domino"
+    rewrite: false
+    requireSubdomain: false
