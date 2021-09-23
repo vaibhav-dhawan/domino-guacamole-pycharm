@@ -17,7 +17,7 @@ def mappathf(path):
     
 def setup_pycharm():
   return {
-    'command': ['/opt/pycharm-community-2021.2.1/bin/pycharm.sh'],
+    'command': ['/var/opt/workspaces/pycharm/start.sh'],
     'port': 8080,
     'timeout': 300,
     'absolute_url': True,
