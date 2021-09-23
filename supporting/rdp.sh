@@ -15,4 +15,4 @@ echo "background: none" > $HOME/.fluxbox/overlay
 # Launch Texmaker
 cd $DOMINO_WORKING_DIR
 fluxbox &
-/opt/pycharm-community-2021.2.1/bin/pycharm.sh
+xterm -e /opt/pycharm-community-2021.2.1/bin/pycharm.sh
